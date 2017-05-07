@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon"href="icon.png">
+<title>
+동아리 면접 일정표
+</title>
+
+</head>
+<style>
+body {
+background: url('반투명.png') no-repeat center center fixed;   
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family: '맑은 고딕';
+font-style: bold;
+}
+</style>
+
+<body>
+    <br><br>
+<center>
+<font size="5">학생회 정보로 제작하였습니다.<br>틀린 정보가 있을 경우<br>
+학생회에 제보 부탁드립니다.</font>
+<br><br>
+
+
+
+
+<form>
+<select name="clubtag">
+<option value="일반">일반</option>
+<option value="정보통신과">정보통신과</option>
+<option value="소프트웨어과">소프트웨어과</option>
+<option value="테크노경영과">테크노경영과</option>
+<option value="멀티미디어과">멀티미디어과</option>
+<option value="부동아리">부동아리</option>
+</select>
+<input type="submit" formenctype="multipart/form-data" formmethod="GET" formaction="result.php" value="찾아보기">
+</form>
+<br>
+<h2 id="clock"></h2>
+
+<script>
+var a = setInterval(timer, 1000);
+
+function timer() {
+    var d = new Date();
+    style="position: absolute; top:800; left:300px";
+    document.getElementById("clock").innerHTML =  d.toLocaleTimeString();
+}
+</script>
+<footer>
+<p>Made By BluePrint</p>
+</footer>
+</center>
+</body>
+</html>
